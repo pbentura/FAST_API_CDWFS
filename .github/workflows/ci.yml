@@ -46,4 +46,4 @@ jobs:
             docker pull ${{ secrets.DOCKERHUB_USERNAME }}/app_flask_pinhas:latest
             docker stop app_flask_pinhas || true
             docker rm app_flask_pinhas || true
-            docker run -d --name app_flask_pinhas -p 8000:8000 ${{ secrets.DOCKERHUB_USERNAME }}/app_flask_pinhas:latest
+            docker run -d --name app_flask_pinhas -p 3004:3000 ${{ secrets.DOCKERHUB_USERNAME }}/app_flask_pinhas:latest

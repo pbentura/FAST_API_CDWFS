@@ -47,3 +47,5 @@ jobs:
             docker stop app_flask_pinhas || true
             docker rm app_flask_pinhas || true
             docker run -d --name app_flask_pinhas -p 8000:8000 ${{ secrets.DOCKERHUB_USERNAME }}/app_flask_pinhas:latest
+
+
